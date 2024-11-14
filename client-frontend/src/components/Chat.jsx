@@ -3,7 +3,7 @@ import VoiceToTextInput from "./VoiceToTextInput";
 import classes from "./Chat.module.css";
 import { useNavigate } from "react-router-dom";
 
-const API = "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";
+const API = "Your api key";
 
 function Chat() {
   const [inputText, setInputText] = useState("");
