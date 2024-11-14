@@ -3,7 +3,7 @@ import VoiceToTextInput from "./VoiceToTextInput";
 import classes from "./Chat.module.css";
 import { useNavigate } from "react-router-dom";
 
-const API = "Your api key";
+const API = "Your_api_key";
 
 function Chat() {
   const [inputText, setInputText] = useState("");
@@ -58,29 +58,6 @@ function Chat() {
     setMessage("");
   };
 
-  const sendMessage = async () => {
-    setResponse([]);
-    setLoading("loading...");
-    if (!message) {
-      setResponse([]);
-      setLoading("please enter a chat");
-      return false;
-    }
-    const data = await fetch(`http://localhost:8000/chat/${message}`);
-    const result = await data.text();
-    if (result === "error") {
-      console.log(result);
-      setResponse(
-        "sorry cannot provide information on that. This is against my rules and regulations"
-      );
-      setLoading("");
-      return false;
-    }
-    const linesArray = result.split("\n");
-    console.log(linesArray);
-    setResponse(linesArray);
-    setLoading("");
-  };
 
   return (
     <div className={classes.main}>
