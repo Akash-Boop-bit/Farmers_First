@@ -1,0 +1,211 @@
+/* From Uiverse.io by vinodjangid07 */
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  width: 50px;
+  transition-duration: 0.3s;
+  transform: translateY(60%);
+}
+
+.button::before {
+  position: absolute;
+  top: -20px;
+  content: "Delete";
+  color: white;
+  transition-duration: 0.3s;
+  font-size: 2px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: 0.3s;
+}
+
+.main {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(45deg, blue, white, blue);
+}
+
+.main2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10rem);
+}
+
+.main2 h1 {
+  padding: 2rem;
+}
+
+.purchase {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.purchase ul {
+  list-style: none;
+}
+.purchase li {
+  margin-bottom: 1rem;
+}
+
+/* From Uiverse.io by PriyanshuGupta28 */
+.card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 20rem;
+  height: 10rem;
+  color: yellow;
+  border-radius: 1rem;
+  transition: all 1s;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card2:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+}
+
+/* From Uiverse.io by abrahamcalsin */
+.butt {
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.butt:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background-color: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+  color: black;
+}
+
+.butt:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+  color: black;
+}
+
+.butt span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: black;
+
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.butt:hover span {
+  color: black;
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.li {
+  list-style: none;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.li p {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main2 {
+    width: 100%;
+  }
+}

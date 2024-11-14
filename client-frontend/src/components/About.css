@@ -1,0 +1,35 @@
+.appp1 {
+  min-height: 70vh;
+}
+/* AboutUs.css */
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.about-us-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-us-container section {
+  margin-bottom: 20px;
+}
+
+.about-us-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-us-container p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-us-container .contact p {
+  margin: 5px 0;
+}

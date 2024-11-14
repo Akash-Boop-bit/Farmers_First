@@ -1,0 +1,96 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+.main1 {
+  width: 100%;
+  max-width: 600px;
+  background-color: aliceblue;
+  height: 100%;
+  min-height: 100vh;
+}
+.main1 h1 {
+  text-align: center;
+}
+
+.main2 {
+  padding: 0 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main3 {
+  padding: 0 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Red Button */
+.redbutton {
+  background-color: red; /* Crimson red */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 0.3rem; /* Rounded corners */
+  padding: 0.8rem 1.2rem; /* Adjust padding as needed */
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.redbutton:hover {
+  background-color: hsl(0, 100%, 35%); /* Darker shade of red on hover */
+}
+
+/* Green Button */
+.greenbutton {
+  background-color: rgb(67, 196, 67); /* Lime green */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 0.3rem; /* Rounded corners */
+  padding: 0.8rem 1.2rem; /* Adjust padding as needed */
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.greenbutton:hover {
+  background-color: #228b22; /* Darker shade of green on hover */
+}
+
+@media screen and (max-width: 600px) {
+  .redbutton {
+    border-radius: 0.3rem; /* Rounded corners */
+    padding: 0.8rem 1.2rem; /* Adjust padding as needed */
+    font-size: 1rem;
+  }
+  .greenbutton {
+    border-radius: 0.3rem; /* Rounded corners */
+    padding: 0.8rem 1.2rem; /* Adjust padding as needed */
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .redbutton {
+    border-radius: 0.3rem; /* Rounded corners */
+    padding: 0.4rem 0.8rem; /* Adjust padding as needed */
+    font-size: 0.8rem;
+  }
+  .greenbutton {
+    border-radius: 0.3rem; /* Rounded corners */
+    padding: 0.4rem 0.8rem; /* Adjust padding as needed */
+    font-size: 0.8rem;
+  }
+  .main2 {
+    padding: 0 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main3 {
+    padding: 0 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

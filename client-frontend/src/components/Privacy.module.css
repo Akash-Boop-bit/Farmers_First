@@ -1,0 +1,27 @@
+.main {
+  background-color: aqua;
+  padding: 2rem;
+}
+.main span {
+  font-weight: bold;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+.main h2 {
+  padding: 2rem;
+}
+.main ul {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 0rem;
+  }
+  .main h2 {
+    padding: 0rem;
+  }
+}
